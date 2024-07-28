@@ -1,5 +1,6 @@
 import React from 'react';
 import TimeLine from '../components/TimeLine';
+import Skills from '../components/Skills';
 
 const About = () => {
   const backgroundItems = [
@@ -25,13 +26,13 @@ const About = () => {
       time: 'Feb 2023 - June 2023',
       title: 'Trainee',
       link: { url: 'https://www.staunchsys.com/', text: '@Staunchsys' },
-      description: '',
+      description: 'As a trainee at StaunchSys, I have learned Spring Boot and worked on implementing CRUD operations. I have also gained experience with various front-end technologies and contributed to testing projects.',
     },
     {
       time: 'July 2023 - present',
       title: 'Jr Consultant',
       link: { url: 'https://www.staunchsys.com/', text: '@Staunchsys' },
-      description: '',
+      description: 'I am working as a backend developer, focusing on the backend side using the Spring Boot framework. In my role, I implement tasks as assigned.',
     }
   ];
 
@@ -39,23 +40,7 @@ const About = () => {
     <>
       <TimeLine items={backgroundItems} heading='Background' />
       <TimeLine items={experienceItems} heading='Experience' />
-      <div className="font-semibold text-5xl mt-14 w-full text-center md:text-3xl lg:text-3xl sm:text-2xl">
-        <h1>Technical Skills</h1>
-      </div>
-      <section className="my-20 w-full">
-        <div className="w-[100%] h-32 flex justify-around flex-wrap items-center">
-          <div className="w-20 h-20 mx-3 my-2 sm:w-8 sm:h-8 bg-red-400">1</div>
-          <div className="w-20 h-20 mx-3 my-2 sm:w-8 sm:h-8 bg-red-200">2</div>
-          <div className="w-20 h-20 mx-3 my-2 sm:w-8 sm:h-8 bg-red-100">3</div>
-          <div className="w-20 h-20 mx-3 my-2 sm:w-8 sm:h-8 bg-blue-400">4</div>
-          <div className="w-20 h-20 mx-3 my-2 sm:w-8 sm:h-8 bg-blue-200">5</div>
-          <div className="w-20 h-20 mx-3 my-2 sm:w-8 sm:h-8 bg-blue-100">6</div>
-          <div className="w-20 h-20 mx-3 my-2 sm:w-8 sm:h-8 bg-blue-100">6</div>
-          <div className="w-20 h-20 mx-3 my-2 sm:w-8 sm:h-8 bg-blue-100">6</div>
-          <div className="w-20 h-20 mx-3 my-2 sm:w-8 sm:h-8 bg-blue-100">6</div>
-        </div>
-      </section>
-
+      <Skills />
     </>
   );
 };
