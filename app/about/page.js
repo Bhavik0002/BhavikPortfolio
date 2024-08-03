@@ -38,9 +38,11 @@ const About = () => {
 
   return (
     <>
-      <TimeLine items={backgroundItems} heading='Background' />
-      <TimeLine items={experienceItems} heading='Experience' />
-      <Skills />
+      <div className="dark:bg-gray-800">
+        <TimeLine items={backgroundItems} heading='Background' />
+        <TimeLine items={experienceItems} heading='Experience' />
+        <Skills />
+      </div>
     </>
   );
 };

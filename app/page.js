@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const TypingEffect = ({ text, onComplete }) => {
+const TypingEffect = ({ text }) => {
   const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0);
 
@@ -16,7 +16,7 @@ const TypingEffect = ({ text, onComplete }) => {
     }
   }, [index]);
 
-  return <div className="text-black font-mono font-bold">{displayedText}</div>;
+  return <div className="text-black dark:text-white font-mono font-bold">{displayedText}</div>;
 };
 
 export default function Home() {
@@ -27,18 +27,26 @@ export default function Home() {
   ];
 
   return (
-    <main className="relative h-[83vh] bg-gradient-to-r from-blue-500 to-purple-600 flex items-center">
+    <main className="relative h-[83vh] bg-gradient-to-r from-blue-500 to-purple-600 dark:from-gray-800 dark:to-gray-900 flex items-center">
       <div className="flex flex-col w-[50%] sm:w-full">
-        <div className="mb-2 mx-3 text-xl md:text-base sm:text-sm text-left">
+        <div className="mb-2 mx-3 text-xl md:text-base sm:text-sm text-left dark:text-white">
           <TypingEffect text={texts[0]} />
         </div>
-        <div className="mb-2 mx-3 text-4xl md:text-2xl sm:text-lg text-left">
+        <div className="mb-2 mx-3 text-4xl md:text-2xl sm:text-lg text-left dark:text-white">
           <TypingEffect text={texts[1]} />
         </div>
         <div className="mx-3">
           <a
             target="_blank"
-            className="flex w-28 justify-center px-6 py-3 bg-gradient-to-r from-teal-400 to-teal-600 text-white rounded-lg hover:scale-105 focus:outline-none focus:ring-teal-400 focus:ring-offset-2 shadow-lg hover:shadow-xl animate-pulse md:w-24 md:py-2 sm:w-20 sm:py-1 sm:text-sm" onMouseLeave={() => setResume(true)} onMouseEnter={() => setResume(false)} onClick={() => setResume(true)} download="" href="/AHIR_BHAVIK_RESUME.pdf" >{resume ? 'Resume' : 'Download'}</a>
+            className="flex w-28 justify-center px-6 py-3 bg-gradient-to-r from-teal-400 to-teal-600 dark:from-teal-600 dark:to-teal-800 text-white rounded-lg hover:scale-105 focus:outline-none focus:ring-teal-400 focus:ring-offset-2 shadow-lg hover:shadow-xl animate-pulse md:w-24 md:py-2 sm:w-20 sm:py-1 sm:text-sm"
+            onMouseLeave={() => setResume(true)}
+            onMouseEnter={() => setResume(false)}
+            onClick={() => setResume(true)}
+            download=""
+            href="/AHIR_BHAVIK_RESUME.pdf"
+          >
+            {resume ? 'Resume' : 'Download'}
+          </a>
         </div>
       </div>
       <div className="sm:hidden flex w-[50%] justify-end items-center">
