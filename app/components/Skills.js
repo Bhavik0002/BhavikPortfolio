@@ -29,8 +29,8 @@ const Skills = () => {
                     <div className="mx-3 my-4 flex bg-gradient-to-r from-indigo-400 to-indigo-600 text-white rounded-full py-2 px-4 shadow-lg hover:shadow-xl dark:from-indigo-600 dark:to-indigo-800">
                         <p className="text-sm font-semibold sm:text-xs">SQL</p>
                     </div>
-                    <div className="mx-3 my-4 flex bg-gradient-to-r from-cyan-400 to-cyan-600 text-white rounded-full py-2 px-4 shadow-lg hover:shadow-xl dark:from-cyan-600 dark:to-cyan-800 transition-shadow duration-300 ease-in-out">
-                        <p className="text-sm font-semibold sm:text-xs">React</p>
+                    <div className="mx-3 my-4 flex bg-gradient-to-r from-orange-400 to-orange-600 text-white rounded-full py-2 px-4 shadow-lg hover:shadow-xl dark:from-orange-600 dark:to-orange-800 transition-shadow duration-300 ease-in-out">
+                         <p className="text-sm font-semibold sm:text-xs">RabbitMQ</p>
                     </div>
                     <div className="mx-3 my-4 flex bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full py-2 px-4 shadow-lg hover:shadow-xl dark:from-blue-700 dark:to-blue-900">
                         <p className="text-sm font-semibold sm:text-xs">Tailwind CSS</p>
@@ -40,6 +40,9 @@ const Skills = () => {
                     </div>
                     <div className="mx-3 my-4 flex bg-gradient-to-r from-yellow-400 to-yellow-600 text-white rounded-full py-2 px-4 shadow-lg hover:shadow-xl dark:from-yellow-600 dark:to-yellow-800">
                         <p className="text-sm font-semibold sm:text-xs">JavaScript</p>
+                    </div>
+                    <div className="mx-3 my-4 flex bg-gradient-to-r from-purple-400 to-purple-600 text-white rounded-full py-2 px-4 shadow-lg hover:shadow-xl dark:from-purple-600 dark:to-purple-800 transition-shadow duration-300 ease-in-out">
+                        <p className="text-sm font-semibold sm:text-xs">Kafka</p>
                     </div>
                 </div>
             </section>

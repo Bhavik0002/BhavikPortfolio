@@ -29,10 +29,16 @@ const About = () => {
       description: 'As a trainee at StaunchSys, I have learned Spring Boot and worked on implementing CRUD operations. I have also gained experience with various front-end technologies and contributed to testing projects.',
     },
     {
-      time: 'July 2023 - present',
+      time: 'July 2023 - june 2024',
       title: 'Jr Consultant',
       link: { url: 'https://www.staunchsys.com/', text: '@Staunchsys' },
-      description: 'I am working as a backend developer, focusing on the backend side using the Spring Boot framework. In my role, I implement tasks as assigned.',
+      description: 'I am working as a backend developer, focusing on the backend side using the Spring Boot framework.',
+    },
+    {
+      time: 'July 2024 - present',
+      title: 'Consultant',
+      link: { url: 'https://www.staunchsys.com/', text: '@Staunchsys' },
+      description: 'I am working as a backend developer, focusing on the backend side using the Spring Boot framework.',
     }
   ];
 
